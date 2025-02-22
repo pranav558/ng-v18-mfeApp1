@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ReactiveFormMfeComponent } from './reactive-form-mfe/reactive-form-mfe.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ReactiveFormMfeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

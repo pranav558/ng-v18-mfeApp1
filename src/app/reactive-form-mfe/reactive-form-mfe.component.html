@@ -1,0 +1,11 @@
+<div class="mfe1-container">
+  <h2 class="title">MFE 1 Container</h2>
+  <div *ngIf="mfe2Data().detail.msg" class="data-message">
+    Data coming from MFE 2: {{ mfe2Data().detail.msg }}
+  </div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-card">
+    <input formControlName="name" placeholder="Name" class="form-input">
+    <input formControlName="email" placeholder="Email" class="form-input">
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+</div>

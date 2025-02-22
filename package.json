@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:mfe1": "ng build && ren dist\\ng-v18-mfe-app1\\browser\\main-*.js main-mfe1.js && ren dist\\ng-v18-mfe-app1\\browser\\styles-*.css styles-mfe1.css"
   },
   "private": true,
   "dependencies": {
@@ -14,10 +15,12 @@
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
     "@angular/core": "^18.2.0",
+    "@angular/elements": "^18.2.13",
     "@angular/forms": "^18.2.0",
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "ng-v18-mfe-app1": "file:",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
